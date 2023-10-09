@@ -7,12 +7,13 @@ import com.Recipe.RecipeApplication.domains.repositories.UnitOfMeasureRepository
 import com.Recipe.RecipeApplication.services.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Optional;
 
-@Component
+@Controller
 public class IndexController {
 
     private final RecipeService recipeService;

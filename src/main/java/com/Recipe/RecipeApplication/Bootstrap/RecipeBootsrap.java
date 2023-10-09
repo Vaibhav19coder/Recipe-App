@@ -1,6 +1,5 @@
 package com.Recipe.RecipeApplication.Bootstrap;
 
-import com.Recipe.RecipeApplication.RecipeApplication;
 import com.Recipe.RecipeApplication.domains.*;
 import com.Recipe.RecipeApplication.domains.repositories.CategoryRepository;
 import com.Recipe.RecipeApplication.domains.repositories.RecipeRepository;
