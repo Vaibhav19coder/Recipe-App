@@ -81,6 +81,9 @@ public class RecipeBootsrap implements ApplicationListener<ContextRefreshedEvent
         guacamole.setDescription("Perfect Guacamole");
         guacamole.setCookTime("0");
         guacamole.setPrepTime("10");
+        guacamole.setServings("3");
+        guacamole.setSource("30");
+        guacamole.setUrl("https://www.makesomething.com");
         guacamole.setDifficulty(Difficulty.EASY);
         guacamole.setDirections("Cut the avocados:\n" +
                 "Cut the avocados in half. Remove the pit. Score the inside of the avocado with a blunt knife and scoop out the flesh with a spoon. (See How to Cut and Peel an Avocado.) Place in a bowl." +
@@ -110,11 +113,11 @@ public class RecipeBootsrap implements ApplicationListener<ContextRefreshedEvent
         guacamole.setNotes(guacaNotes);
 
         guacamole.getIngredients().add(new Ingredient("Ripe Avocados", new BigDecimal(2), each, guacamole));
-        guacamole.getIngredients().add(new Ingredient("Kosher Salt", new BigDecimal(1/4), teaspoon, guacamole));
+        guacamole.getIngredients().add(new Ingredient("Kosher Salt", new BigDecimal(0.25), teaspoon, guacamole));
         guacamole.getIngredients().add(new Ingredient("Fresh Lime", new BigDecimal(1), tablespoon, guacamole));
         guacamole.getIngredients().add(new Ingredient("Chillis", new BigDecimal(2), each, guacamole));
         guacamole.getIngredients().add(new Ingredient("Cilantro", new BigDecimal(2), tablespoon, guacamole));
-        guacamole.getIngredients().add(new Ingredient("Tomato", new BigDecimal(1/2), each, guacamole));
+        guacamole.getIngredients().add(new Ingredient("Tomato", new BigDecimal(0.5), each, guacamole));
 
         guacamole.getCategories().add(americanCategory);
         guacamole.getCategories().add(mexicanCategory);
