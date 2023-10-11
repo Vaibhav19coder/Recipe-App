@@ -112,12 +112,12 @@ public class RecipeBootsrap implements ApplicationListener<ContextRefreshedEvent
         guacaNotes.setRecipe(guacamole);
         guacamole.setNotes(guacaNotes);
 
-        guacamole.getIngredients().add(new Ingredient("Ripe Avocados", new BigDecimal(2), each, guacamole));
-        guacamole.getIngredients().add(new Ingredient("Kosher Salt", new BigDecimal(0.25), teaspoon, guacamole));
-        guacamole.getIngredients().add(new Ingredient("Fresh Lime", new BigDecimal(1), tablespoon, guacamole));
-        guacamole.getIngredients().add(new Ingredient("Chillis", new BigDecimal(2), each, guacamole));
-        guacamole.getIngredients().add(new Ingredient("Cilantro", new BigDecimal(2), tablespoon, guacamole));
-        guacamole.getIngredients().add(new Ingredient("Tomato", new BigDecimal(0.5), each, guacamole));
+        guacamole.addIngredient(new Ingredient("Ripe Avocados", new BigDecimal(2), each, guacamole));
+        guacamole.addIngredient(new Ingredient("Kosher Salt", new BigDecimal(0.25), teaspoon, guacamole));
+        guacamole.addIngredient(new Ingredient("Fresh Lime", new BigDecimal(1), tablespoon, guacamole));
+        guacamole.addIngredient(new Ingredient("Chillis", new BigDecimal(2), each, guacamole));
+        guacamole.addIngredient(new Ingredient("Cilantro", new BigDecimal(2), tablespoon, guacamole));
+        guacamole.addIngredient(new Ingredient("Tomato", new BigDecimal(0.5), each, guacamole));
 
         guacamole.getCategories().add(americanCategory);
         guacamole.getCategories().add(mexicanCategory);

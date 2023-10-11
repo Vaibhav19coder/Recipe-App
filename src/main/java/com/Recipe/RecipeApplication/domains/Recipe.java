@@ -138,6 +138,16 @@ public class Recipe {
         return categories;
     }
 
+    public Recipe addIngredient(Ingredient ingredient){
+
+        ingredient.setRecipe(this);
+
+        this.ingredients.add(ingredient);
+
+        return this;
+
+    }
+
     public void setCategories(Set<Category> categories) {
         this.categories = categories;
     }
