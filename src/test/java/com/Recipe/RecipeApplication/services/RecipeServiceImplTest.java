@@ -20,11 +20,13 @@ class RecipeServiceImplTest {
     @Mock
     RecipeRepository recipeRepository;
 
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
-        recipeService = new RecipeServiceImpl(recipeRepository);
-    }
+
+
+//    @BeforeEach
+//    void setUp() {
+//        MockitoAnnotations.openMocks(this);
+//        recipeService = new RecipeServiceImpl(recipeRepository);
+//    }
 
     @Test
     void getRecipes() throws Exception{
